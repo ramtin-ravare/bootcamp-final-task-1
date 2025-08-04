@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeawas Perfume</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="user-panel__header container">
+      <!-- Navbar Header -->
+      <nav class="header__nav">
+        <!-- Navbar Brand -->
+        <div class="header__nav-brand">
+          <img
+            class="brand__img"
+            src="../assets/images/header-brand.png"
+            alt="brand"
+          />
+          <span>عطر</span>
+        </div>
+        <span class="header__brand-icon">
+          <svg class="icon">
+            <use xlink:href="../assets/icons/svg-sprite-header.svg#star"></use>
+          </svg>
+        </span>
+
+        <!-- Navbar Search field -->
+        <form class="header__nav-search">
+          <input
+            class="nav__searchbar"
+            type="text"
+            placeholder="نام محصول، دسته محصول، برند محصول..."
+          />
+          <button class="nav__search-btn btn btn--secondary">
+            <span>
+              <svg class="icon">
+                <use
+                  xlink:href="../assets/icons/svg-sprite-header.svg#search"
+                ></use>
+              </svg>
+            </span>
+            جستجو
+          </button>
+        </form>
+
+        <!-- Navbar Toggler -->
+        <div class="nav__toggler">
+          <div class="bar bar-one"></div>
+          <div class="bar bar-two"></div>
+          <div class="bar bar-three"></div>
+        </div>
+
+        <!-- Navbar tabs -->
+        <div class="header__nav-tabs">
+          <ul class="nav-tabs__list">
+            <li class="nav-tab__item">
+              <a href="#">مطالب آموزشی</a>
+            </li>
+            <li class="nav-tab__item">
+              <a href="#">درباره ما</a>
+            </li>
+            <li class="nav-tab__item">
+              <a href="#">تماس با ما</a>
+            </li>
+          </ul>
+          <button class="header__login-btn btn btn--secondary">
+            ورود | ثبت نام
+            <span>
+              <svg class="icon">
+                <use
+                  xlink:href="../assets/icons/svg-sprite-header.svg#user"
+                ></use>
+              </svg>
+            </span>
+          </button>
+          <div class="header__nav-cart">
+            <span class="nav-cart__icon">
+              <svg class="icon">
+                <use
+                  xlink:href="../assets/icons/svg-sprite-header.svg#cart"
+                ></use>
+              </svg>
+            </span>
+            <div class="nav-cart__info">
+              <span class="nav-cart__title">سبد خرید شما</span>
+              <div class="nav-cart__info-btn">
+                <span class="nav-cart__count">۴ کالا</span>
+                <span>
+                  <svg class="icon">
+                    <use
+                      xlink:href="../assets/icons/svg-sprite-header.svg#chevron-left"
+                    ></use>
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Navbar filters and support -->
+      <div class="header__filters">
+        <!-- Filters and Dropdown -->
+        <div class="filters__categories">
+          <select class="filters__dropdown btn btn--danger">
+            <option value="categories">دسته بندی ها</option>
+            <option value="perfume">پرفیوم</option>
+            <option value="eau-de-perfume">ادو پرفیوم</option>
+            <option value="eau-de-cologne">ادکلن</option>
+            <option value="eau-de-toilette">ادو توالت</option>
+          </select>
+          <div class="header__filter">
+            <span>
+              <svg class="icon">
+                <use
+                  xlink:href="../assets/icons/svg-sprite-header.svg#best-seller"
+                ></use>
+              </svg>
+            </span>
+            <span>پرفروش ترین ها</span>
+          </div>
+          <div class="header__filter">
+            <span>
+              <svg class="icon">
+                <use
+                  xlink:href="../assets/icons/svg-sprite-header.svg#newest"
+                ></use>
+              </svg>
+            </span>
+            <span>جدیدترین ها</span>
+          </div>
+          <div class="header__filter">
+            <span>
+              <svg class="icon">
+                <use
+                  xlink:href="../assets/icons/svg-sprite-header.svg#discount"
+                ></use>
+              </svg>
+            </span>
+            <span>تخفیف دار</span>
+          </div>
+        </div>
+
+        <!-- Navbar Support -->
+        <div class="header__support">
+          <span class="header__support-number"><span>۰۲۱</span>-۲۳۴۵۶۷۸</span>
+          <button class="header__support-btn btn btn--danger">
+            <span>
+              <svg class="icon">
+                <use
+                  xlink:href="../assets/icons/svg-sprite-header.svg#support"
+                ></use>
+              </svg>
+            </span>
+            پشتیبانی
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- User Panel -->
+    <main class="user-panel__profile container">
+      <!-- Navbar -->
+      <nav class="user-panel__navbar">
+        <!-- User profile and informations -->
+        <div class="navbar__user">
+          <div class="navbar__user-info">
+            <span class="navbar__user-avatar">
+              <svg class="icon">
+                <use xlink:href="../assets/icons/svg-sprite-main.svg#user"></use>
+              </svg>
+            </span>
+            <div class="navbar__user-id">
+              <h3 class="navbar__user-name">رضا جنیدی</h3>
+              <span class="navbar__user-number">۰۹۱۲۳۴۵۶۷۸۹</span>
+            </div>
+          </div>
+          <span class="navbar__user-edit">
+            <svg class="icon">
+              <use xlink:href="../assets/icons/svg-sprite-main.svg#edit"></use>
+            </svg>
+          </span>
+        </div>
+
+        <!-- Navbar Tabs -->
+        <ul class="navbar__list">
+          <li class="navbar__list-item">
+            <a class="navbar__item-tab" href="#">
+              <span class="navbar__item-icon">
+                <svg class="icon">
+                  <use
+                    xlink:href="../assets/icons/svg-sprite-main.svg#home"
+                  ></use>
+                </svg>
+              </span>
+              سفارش های من
+            </a>
+          </li>
+          <li class="navbar__list-item">
+            <a class="navbar__item-tab" href="#">
+              <span class="navbar__item-icon">
+                <svg class="icon">
+                  <use
+                    xlink:href="../assets/icons/svg-sprite-main.svg#user-info"
+                  ></use>
+                </svg>
+              </span>
+              اطلاعات حساب کاربری
+            </a>
+          </li>
+          <li class="navbar__list-item">
+            <a class="navbar__item-tab" href="#">
+              <span class="navbar__item-icon">
+                <svg class="icon">
+                  <use
+                    xlink:href="../assets/icons/svg-sprite-main.svg#alarm"
+                  ></use>
+                </svg>
+              </span>
+              پیام ها
+            </a>
+            <span class="navbar__item-notif">۳</span>
+          </li>
+          <li class="navbar__list-item">
+            <a class="navbar__item-tab" href="#">
+              <span class="navbar__item-icon">
+                <svg class="icon">
+                  <use
+                    xlink:href="../assets/icons/svg-sprite-main.svg#message"
+                  ></use>
+                </svg>
+              </span>
+              نظرات من
+            </a>
+          </li>
+          <li class="navbar__list-item">
+            <a class="navbar__item-tab" href="#">
+              <span class="navbar__item-icon">
+                <svg class="icon">
+                  <use
+                    xlink:href="../assets/icons/svg-sprite-main.svg#logout"
+                  ></use>
+                </svg>
+              </span>
+              خروج
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Orders Section -->
+      <section class="user-panel__orders">
+        <!-- User cart title -->
+        <div class="orders__title">
+          <span class="orders__title-icon">
+            <svg class="icon">
+              <use
+                xlink:href="../assets/icons/svg-sprite-main.svg#chevron-right"
+              ></use>
+            </svg>
+          </span>
+          <h3 class="orders__title-text">سفارش های من</h3>
+        </div>
+
+        <!-- User cart summary -->
+        <div class="orders__summary">
+          <div class="orders__info">
+            <div class="orders__info-icon process">
+              <svg class="icon">
+                <use
+                  xlink:href="../assets/icons/svg-sprite-main.svg#clock"
+                ></use>
+              </svg>
+            </div>
+            <div class="orders__info-details">
+              <span class="orders__info-title">در حال پردازش</span>
+              <span class="orders__info-count">۵ سفارش</span>
+            </div>
+          </div>
+          <div class="orders__info">
+            <div class="orders__info-icon success">
+              <svg class="icon">
+                <use xlink:href="../assets/icons/svg-sprite-main.svg#tick"></use>
+              </svg>
+            </div>
+            <div class="orders__info-details">
+              <span class="orders__info-title">تحویل شده</span>
+              <span class="orders__info-count">۴ سفارش</span>
+            </div>
+          </div>
+          <div class="orders__info">
+            <div class="orders__info-icon return">
+              <svg class="icon">
+                <use
+                  xlink:href="../assets/icons/svg-sprite-main.svg#return"
+                ></use>
+              </svg>
+            </div>
+            <div class="orders__info-details">
+              <span class="orders__info-title">مرجوعی</span>
+              <span class="orders__info-count">۲ سفارش</span>
+            </div>
+          </div>
+          <div class="orders__info">
+            <div class="orders__info-icon cancel">
+              <svg class="icon">
+                <use
+                  xlink:href="../assets/icons/svg-sprite-main.svg#canceled"
+                ></use>
+              </svg>
+            </div>
+            <div class="orders__info-details">
+              <span class="orders__info-title">لغو شده</span>
+              <span class="orders__info-count">۳ سفارش</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- User orders list -->
+        <div class="orders__list">
+          <div class="orders__item">
+            <div class="orders__item-status process">
+              <span>
+                <svg class="icon">
+                  <use
+                    xlink:href="../assets/icons/svg-sprite-main.svg#clock"
+                  ></use>
+                </svg>
+              </span>
+              <p>در حال پردازش</p>
+            </div>
+            <div class="orders__item-info">
+              <div class="orders__item-delivery-date">
+                <p>تاریخ تحویل سفارش</p>
+                <span>۱۴۰۳/۰۵/۰۷</span>
+              </div>
+              <div class="orders__item-code">
+                <p>کد سفارش :</p>
+                <span>۲۱۶۵۴۴۹</span>
+              </div>
+              <div class="orders__item-price">
+                <span class="orders__item-price-unit">تومان</span>
+                ۱,۵۵۰,۰۰۰
+              </div>
+            </div>
+            <div class="orders__item-products">
+              <div class="orders__products-list">
+                <div class="orders__product-item">
+                  <img src="../assets/images/perfume1.png" alt="P-01" />
+                  <span>۱</span>
+                </div>
+                <div class="orders__product-item">
+                  <img src="../assets/images/perfume2.png" alt="P-02" />
+                  <span>۱</span>
+                </div>
+                <div class="orders__product-item">
+                  <img src="../assets/images/perfume3.png" alt="P-03" />
+                  <span>۳</span>
+                </div>
+              </div>
+              <div class="orders__item-details">
+                <a href="#">جزئیات سفارش</a>
+                <span>
+                  <svg class="icon">
+                    <use
+                      xlink:href="../assets/icons/svg-sprite-main.svg#chevron-left"
+                    ></use>
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="orders__item">
+            <div class="orders__item-status process">
+              <span>
+                <svg class="icon">
+                  <use
+                    xlink:href="../assets/icons/svg-sprite-main.svg#clock"
+                  ></use>
+                </svg>
+              </span>
+              <p>در حال پردازش</p>
+            </div>
+            <div class="orders__item-info">
+              <div class="orders__item-delivery-date">
+                <p>تاریخ تحویل سفارش</p>
+                <span>۱۴۰۳/۰۵/۰۷</span>
+              </div>
+              <div class="orders__item-code">
+                <p>کد سفارش :</p>
+                <span>۲۱۶۵۴۴۹</span>
+              </div>
+              <div class="orders__item-price">
+                <span class="orders__item-price-unit">تومان</span>
+                ۱,۵۵۰,۰۰۰
+              </div>
+            </div>
+            <div class="orders__item-products">
+              <div class="orders__products-list">
+                <div class="orders__product-item">
+                  <img src="../assets/images/perfume1.png" alt="P-01" />
+                  <span>۱</span>
+                </div>
+                <div class="orders__product-item">
+                  <img src="../assets/images/perfume2.png" alt="P-02" />
+                  <span>۱</span>
+                </div>
+                <div class="orders__product-item">
+                  <img src="../assets/images/perfume3.png" alt="P-03" />
+                  <span>۳</span>
+                </div>
+              </div>
+              <div class="orders__item-details">
+                <a href="#">جزئیات سفارش</a>
+                <span>
+                  <svg class="icon">
+                    <use
+                      xlink:href="../assets/icons/svg-sprite-main.svg#chevron-left"
+                    ></use>
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="user-panel__footer">
+      <!-- header of footer -->
+      <div class="footer__header-wrapper">
+        <div class="container">
+          <header class="footer__features">
+            <div class="footer__feature">
+              <div class="footer__feature-icon">
+                <span>
+                  <svg class="icon">
+                    <use
+                      xlink:href="../assets/icons/svg-sprite-footer.svg#all-day"
+                    ></use>
+                  </svg>
+                </span>
+              </div>
+              <div class="footer__feature-desc">
+                <h3 class="footer__feature-title">پشتیبانی ۲۴ ساعته</h3>
+                <p class="footer__feature-text">پاسخ گویی سریع، همیشه آنلاین</p>
+              </div>
+            </div>
+
+            <div class="footer__features-separator"></div>
+
+            <div class="footer__feature">
+              <div class="footer__feature-icon">
+                <span>
+                  <svg class="icon">
+                    <use
+                      xlink:href="../assets/icons/svg-sprite-footer.svg#unique"
+                    ></use>
+                  </svg>
+                </span>
+              </div>
+              <div class="footer__feature-desc">
+                <h3 class="footer__feature-title">محصولات منحصر به فرد</h3>
+                <p class="footer__feature-text">رایحه‌هایی خاص و کمیاب</p>
+              </div>
+            </div>
+
+            <div class="footer__features-separator"></div>
+
+            <div class="footer__feature">
+              <div class="footer__feature-icon">
+                <span>
+                  <svg class="icon">
+                    <use
+                      xlink:href="../assets/icons/svg-sprite-footer.svg#medal"
+                    ></use>
+                  </svg>
+                </span>
+              </div>
+              <div class="footer__feature-desc">
+                <h3 class="footer__feature-title">تضمین کیفیت</h3>
+                <p class="footer__feature-text">اصل بودن با ضمانت</p>
+              </div>
+            </div>
+
+            <div class="footer__features-separator"></div>
+
+            <div class="footer__feature">
+              <div class="footer__feature-icon">
+                <span>
+                  <svg class="icon">
+                    <use
+                      xlink:href="../assets/icons/svg-sprite-footer.svg#truck"
+                    ></use>
+                  </svg>
+                </span>
+              </div>
+              <div class="footer__feature-desc">
+                <h3 class="footer__feature-title">ارسال به سراسر کشور</h3>
+                <p class="footer__feature-text">تحویل سریع، مطمئن، سراسری</p>
+              </div>
+            </div>
+          </header>
+        </div>
+      </div>
+
+      <!-- body of footer -->
+      <div class="footer__body-wrapper">
+        <div class="footer-container">
+          <div class="footer__body">
+            <!-- brand and description -->
+            <div class="footer__body-desc">
+              <img
+                class="footer__body-brand"
+                src="../assets/images/footer-brand.png"
+                alt="footer-brand"
+              />
+              <h3 class="footer__body-title">جیواز، دنیای رایحه‌های خاصه</h3>
+              <p class="footer__body-text">
+                ما اینجاییم تا کمک کنیم عطری رو پیدا کنی که با شخصیتت هم‌صدا
+                باشه.<br />چون باور داریم عطر فقط یک انتخاب روزمره نیست؛ یک
+                امضای شخصیه، بخشی از تو که قبل از گفتن هر کلمه‌ای، دیده و حس
+                می‌شه.<br />در دنیای رایحه‌ها، هر بو یک داستانه. بعضی‌ها
+                خاطره‌ان، بعضی‌ها انگیزه، بعضی‌ها آرامش. و ما در جیواز، همه‌ی
+                این داستان‌ها رو برات جمع کردیم
+              </p>
+            </div>
+
+            <!-- links and cotact-us -->
+            <div class="footer__links-section">
+              <div class="footer__links">
+                <h2 class="footer__links-title">عطر فروشی</h2>
+                <div class="footer__links-container">
+                  <a href="#">درباره ما</a>
+                  <a href="#">قوانین و مقررات</a>
+                  <a href="#">ارتباط باما</a>
+                  <a href="#">آدرس ها</a>
+                </div>
+              </div>
+              <div class="footer__links">
+                <h2 class="footer__links-title">خدمات ما</h2>
+                <div class="footer__links-container">
+                  <a href="#">فروشگاه</a>
+                  <a href="#">وبلاگ</a>
+                </div>
+              </div>
+              <div class="footer__links">
+                <h2 class="footer__links-title">فروشگاه</h2>
+                <div class="footer__links-container">
+                  <a href="#">جدیدترین</a>
+                  <a href="#">محصولات</a>
+                  <a href="#">محصولات پرتخفیف</a>
+                  <a href="#">محصولات پرفروش</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- trust section and support numbers -->
+            <div class="footer__body-trust">
+              <div class="trust__numbers">
+                <div class="trust__number">
+                  <span>۴۳۲۱</span>
+                  <span>۶۰۳</span>
+                  <span>۰۹۱۳</span>
+                </div>
+                <div class="trust__number">
+                  <span>۴۳۲۱</span>
+                  <span>۶۰۳</span>
+                  <span>۰۹۱۳</span>
+                </div>
+                <p class="trust__number-text">
+                  <span>منتظر صدای گرم شما هستیم!!</span>
+                  اگر سوالی داشتید با ماتماس بگیرید
+                </p>
+              </div>
+              <div class="trust__approves">
+                <span>به ما اعتماد کنید</span>
+                <div class="trust__approves-icons">
+                  <img
+                    src="../assets/images/footer-etehadiye.png"
+                    alt="etehadiyeh"
+                  />
+                  <img src="../assets/images/footer-enamad.png" alt="enamad" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer of footer -->
+      <div class="footer__footer-wrapper">
+        <div class="container">
+          <footer class="footer__footer">
+            <p class="footer__terms">
+              تمامی حقوق مادی و معنوی برای این سایت محفوظ می باشد
+            </p>
+            <div class="footer__socials">
+              <span class="footer__social">
+                <svg class="icon">
+                  <use
+                    xlink:href="../assets/icons/svg-sprite-footer.svg#whatsapp"
+                  ></use>
+                </svg>
+              </span>
+              <span class="footer__social">
+                <svg class="icon">
+                  <use
+                    xlink:href="../assets/icons/svg-sprite-footer.svg#instagram"
+                  ></use>
+                </svg>
+              </span>
+              <span class="footer__social">
+                <svg class="icon">
+                  <use
+                    xlink:href="../assets/icons/svg-sprite-footer.svg#facebook"
+                  ></use>
+                </svg>
+              </span>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
