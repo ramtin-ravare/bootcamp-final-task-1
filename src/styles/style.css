@@ -80,6 +80,12 @@ select {
 a {
   color: inherit;
 }
+select {
+  background-color: inherit;
+  color: inherit;
+  outline: none;
+  border: none;
+}
 /* End of Reset Codes */
 
 /* General and Modifier classes */
@@ -145,12 +151,12 @@ a {
 .container {
   max-width: 1250px;
   margin: 0 auto;
-  padding: 0.5rem;
+  padding: 1rem;
 }
 .footer-container {
   max-width: 1024px;
   margin: 0 auto;
-  padding: 0.5rem;
+  padding: 1rem;
 }
 /* End of General and Modifier classes */
 
@@ -392,7 +398,15 @@ a {
   justify-content: space-around;
 }
 .filters__dropdown {
-  outline: none;
+  cursor: pointer;
+}
+.filters__dropdown option {
+  background-color: #fff;
+  color: var(--color-error);
+}
+.filters__dropdown option:checked {
+  background-color: var(--color-error);
+  color: #fff;
 }
 .header__filter {
   font-size: var(--font-size-md);
@@ -439,7 +453,7 @@ a {
     display: none;
   }
 }
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 600px) {
   .header__support-number {
     display: none;
   }
@@ -834,12 +848,12 @@ a {
 /* Header of footer, features sections */
 .footer__header-wrapper {
   background-color: #fff4f8;
+  padding: 2rem 0;
 }
 .footer__features {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 6rem 3rem;
-  margin: 2rem 0;
 }
 .footer__feature {
   display: flex;
@@ -864,7 +878,7 @@ a {
   justify-content: center;
   padding: 1rem;
   background-color: #fff;
-  background-image: url(../assets/images/Ellipse.png);
+  background-image: url(../../assets/images/Ellipse.png);
   background-repeat: no-repeat;
   background-position: 30% 30%;
   background-size: 14px;

@@ -104,13 +104,20 @@
       <div class="header__filters">
         <!-- Filters and Dropdown -->
         <div class="filters__categories">
-          <select class="filters__dropdown btn btn--danger">
-            <option value="categories">دسته بندی ها</option>
-            <option value="perfume">پرفیوم</option>
-            <option value="eau-de-perfume">ادو پرفیوم</option>
-            <option value="eau-de-cologne">ادکلن</option>
-            <option value="eau-de-toilette">ادو توالت</option>
-          </select>
+          <div class="filters__dropdown btn btn--danger">
+            <svg class="icon">
+              <use
+                xlink:href="../assets/icons/svg-sprite-header.svg#category"
+              ></use>
+            </svg>
+            <select>
+              <option value="categories">دسته بندی ها</option>
+              <option value="perfume">پرفیوم</option>
+              <option value="eau-de-perfume">ادو پرفیوم</option>
+              <option value="eau-de-cologne">ادکلن</option>
+              <option value="eau-de-toilette">ادو تویلت</option>
+            </select>
+          </div>
           <div class="header__filter">
             <span>
               <svg class="icon">
@@ -169,7 +176,9 @@
           <div class="navbar__user-info">
             <span class="navbar__user-avatar">
               <svg class="icon">
-                <use xlink:href="../assets/icons/svg-sprite-main.svg#user"></use>
+                <use
+                  xlink:href="../assets/icons/svg-sprite-main.svg#user"
+                ></use>
               </svg>
             </span>
             <div class="navbar__user-id">
@@ -282,7 +291,9 @@
           <div class="orders__info">
             <div class="orders__info-icon success">
               <svg class="icon">
-                <use xlink:href="../assets/icons/svg-sprite-main.svg#tick"></use>
+                <use
+                  xlink:href="../assets/icons/svg-sprite-main.svg#tick"
+                ></use>
               </svg>
             </div>
             <div class="orders__info-details">
